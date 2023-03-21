@@ -1,0 +1,17 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "main": "cmd/main/main.go",
+  "author": "AyoOluwa-Israel;",
+  "license": "MIT",
+  "scripts": {
+    "serve": "nodemon --exec go run cmd/main/main.go --signal SIGTERM"
+  },
+
+  "configNodemon": {
+    "ext": "go",
+    "execMap": {
+      "go": "go run cmd/main/main.go"
+    }
+  }
+}
