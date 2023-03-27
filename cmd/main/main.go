@@ -37,7 +37,7 @@ func main() {
 	r.HandleFunc("/", root).Methods("GET")
 	http.Handle("/", r)
 
-	fmt.Printf("Starting Server at port 8080 and checking.. \n")
+	fmt.Printf("Starting Server at port 8080 and connected to db.. \n")
 	log.Fatal(http.ListenAndServe("localhost:8080", r))
 
 }
